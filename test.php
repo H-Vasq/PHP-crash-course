@@ -8,9 +8,13 @@
     echo "$name" . "" ."" . "may name is Omar " . "" . "" . "" . "and my job is $job." . "<br><br>";
 */
 
-    echo "The type of name is " . gettype($name) . "<br>";
+    $stuff = ["hammer", "nails", "wood", "saw"];
+
+    echo "The type of  is " . gettype($name) . "<br>";
     echo "<br>";
     echo "The type of serial is " . gettype($serial) . "<br><br>";
+    echo "<br>";
+    echo "The type of stuff is " . gettype($stuff) . "<br><br>";
 
 ?>
     
