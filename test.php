@@ -4,8 +4,6 @@
     $job = 'medic';
     $myJob = 'My job is ' . $job . '<br><br>';
 
-    echo $name;
-    echo $myJob;
-
+    echo "$name" . "" ."" . "may name is Omar " . "" . "" . "" . "and my job is $job." . "<br><br>";
 ?>
     
