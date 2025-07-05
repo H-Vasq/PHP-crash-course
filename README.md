@@ -1,6 +1,6 @@
 # PHP-crash-course
 
-- how to check if php installed: php -v
+\- how to check if php installed: php -v
 
 -php already installed in a Codespace
 
