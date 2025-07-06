@@ -12,7 +12,12 @@
     ];
 
     for($i = 0; $i < 10; $i++ ) {
-        echo "Line: $i <br />";
-    };
+
+        if ($i == 5) {
+            echo "This is line 5";
+        }
+
+        echo " Line: $i <br />";
+    }
 ?>
     
