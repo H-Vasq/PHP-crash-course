@@ -1,11 +1,23 @@
 <?php
 
-    $myArray = [
-        "stuff1" => ['apple', 'banana', 'cherry', 5, 6],
-        "stuff2" => ['2 boxes of fruit', '3 boxes of fruit', 7, 8],
-        "stuff3" => [ '9 boxes of fruit']
+    $mecha = [
+        "name" => "Gundam",
+        "type" => "Mobile Suit",
+        "abilities" => ["Beam Rifle", "Shield", "Hyper Mode"],
+        "pilot" => [
+            "name" => "Amuro Ray",
+            "age" => 16,
+            "skills" => ["Piloting", "Combat", "Strategy"]
+        ]
     ];
 
-    print_r($myArray);
+    for($i = 0; $i < 10; $i++ ) {
+
+        if ($i == 5) {
+            echo "This is line 5";
+        }
+
+        echo " Line: $i <br />";
+    }
 ?>
     
