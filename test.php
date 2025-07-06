@@ -11,13 +11,11 @@
         ]
     ];
 
-    for($i = 0; $i < 10; $i++ ) {
+    $num = 0;
 
-        if ($i == 5) {
-            echo "This is line 5";
-        }
-
-        echo " Line: $i <br />";
+    while($num < 10) {
+        echo "While loop lines: $num <br />";
+        $num++;
     }
 ?>
     
