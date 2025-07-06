@@ -13,9 +13,9 @@
 
     $num = 0;
 
-    while($num < 10) {
-        echo "While loop lines: $num <br />";
-        $num++;
+    foreach($mecha as $key => $val) {
+        // echo "$key. $val <br />";
+        print_r("$key. $val <br />");
     }
 ?>
     
