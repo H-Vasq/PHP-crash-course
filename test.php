@@ -14,7 +14,9 @@
 
     $team01 = [$deptA, $deptB];
 
-    echo("Tech from A is " . $deptA['name']);
+    foreach($team01 as $tMember) {
+        echo $tMember['name'] . " " . ":" . " " . $tMember['type'] . "<br />";
+    }
    
 ?>
     
