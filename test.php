@@ -16,8 +16,10 @@
 
     foreach($team01 as $tMember) {
         
-        if($tMember['type'] == 'technician') {
+        if($tMember['type'] == 'artist') {
             echo "This is a" . " " . "Tech";
+        } else {
+            echo "We don't know who this is!";
         };
     }
    
