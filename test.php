@@ -1,21 +1,20 @@
 <?php
 
-    $mecha = [
-        "name" => "Gundam",
-        "type" => "Mobile Suit",
-        "abilities" => ["Beam Rifle", "Shield", "Hyper Mode"],
-        "pilot" => [
-            "name" => "Amuro Ray",
-            "age" => 16,
-            "skills" => ["Piloting", "Combat", "Strategy"]
-        ]
+    $deptA = [
+        "name" => "Tom",
+        "type" => "technician",
+        "serialID" => 0000333
+    ];
+   
+    $deptB = [
+        "name" => "Sara",
+        "type" => "medic",
+        "serialID" => 0000453
     ];
 
-    $num = 0;
+    $team01 = [$deptA, $deptB];
 
-    foreach($mecha as $key => $val) {
-        // echo "$key. $val <br />";
-        print_r("$key. $val <br />");
-    }
+    echo("Tech from A is " . $deptA['name']);
+   
 ?>
     
