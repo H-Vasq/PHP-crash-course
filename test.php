@@ -15,7 +15,10 @@
     $team01 = [$deptA, $deptB];
 
     foreach($team01 as $tMember) {
-        echo $tMember['name'] . " " . ":" . " " . $tMember['type'] . "<br />";
+        
+        if($tMember['type'] == 'technician') {
+            echo "This is a" . " " . "Tech";
+        };
     }
    
 ?>
