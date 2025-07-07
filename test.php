@@ -1,8 +1,20 @@
 <?php
 
-    $array = ["hello", 30, "500 dollars"];
+    $deptA = [
+        "name" => "Tom",
+        "type" => "technician",
+        "serialID" => 0000333
+    ];
+   
+    $deptB = [
+        "name" => "Sara",
+        "type" => "medic",
+        "serialID" => 0000453
+    ];
 
-    print_r($array);
+    $team01 = [$deptA, $deptB];
+
+    echo("Tech from A is " . $deptA['name']);
    
 ?>
     
