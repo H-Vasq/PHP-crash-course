@@ -1,18 +1,12 @@
 <?php
 
-    $name = "Brand-";
-
-    switch($name) {
-        case 'Brand-A':
-            echo "Toyota";
-            break;
-        case 'Brand-B':
-            echo "Honda";
-            break;
-        default:
-            echo "Unknown";
-            break;
+    function add($num1, $num2) {
+        return $num1 + $num2;
     }
+
+    $total = add(10, 15);
+
+    echo $total;
 
 ?>
     
