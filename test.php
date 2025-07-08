@@ -1,18 +1,12 @@
 <?php
 
-    $name = "Brand-";
+    $name = "Brand-A";
 
-    switch($name) {
-        case 'Brand-A':
-            echo "Toyota";
-            break;
-        case 'Brand-B':
-            echo "Honda";
-            break;
-        default:
-            echo "Unknown";
-            break;
-    }
+   function myBrand($name) {
+    echo "My brand is $name.<br />";
+   }
+
+   myBrand("Ford");
 
 ?>
     
