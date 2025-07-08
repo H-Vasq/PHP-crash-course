@@ -1,12 +1,12 @@
 <?php
 
-    $name = "Brand-A";
+    function add($num1, $num2) {
+        return $num1 + $num2;
+    }
 
-   function myBrand($name) {
-    echo "My brand is $name.<br />";
-   }
+    $total = add(10, 15);
 
-   myBrand("Ford");
+    echo $total;
 
 ?>
     
