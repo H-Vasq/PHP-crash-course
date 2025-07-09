@@ -1,19 +1,24 @@
 <?php    
 
     class User {
-        public $name = 'Honda';
+        public $name;
+        public $type;
+
+        public function __construct($name, $type) {
+            // echo 'constructor ran...';
+
+            $this->name = $name;
+            $this->type = $type;
+
+        }
 
         public function greet() {
-            return 'Hello';
+            return $this->name . ' car is for SALE';
         }
     }
 
-    $user1 = new User();
+    $user1 = new User('Honda', 'Sport');
 
-    echo $user1->name . " is saying " . $user1->greet() . "." . "<br />";
-    
-    $user2 = new User();
-    $user2->name = "Susan";
-    
-    echo $user2->name . " is saying " . $user1->greet() . "." . "<br />";
+    echo $user1->name . " " . "is" . " " . "a" . " " . $user1->type . " " . "vehicle" . "." . "<br /><br />";
+    echo $user1->greet();
 ?>
