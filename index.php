@@ -4,8 +4,12 @@
         public $name;
         public $type;
 
-        public function __construct() {
-            echo 'constructor ran...';
+        public function __construct($name, $type) {
+            // echo 'constructor ran...';
+
+            $this->name = $name;
+            $this->type = $type;
+
         }
 
         public function greet() {
@@ -13,7 +17,8 @@
         }
     }
 
-    $user1 = new User();
-    $user2 = new User();
+    $user1 = new User('Honda', 'Sport');
+
+    echo $user1->name . " " . "is" . " " . "a" . " " . $user1->type . " " . "vehicle" . ".";
     
 ?>
