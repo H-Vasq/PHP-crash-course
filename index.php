@@ -13,12 +13,12 @@
         }
 
         public function greet() {
-            return $this->name . ' This car is for SALE';
+            return $this->name . ' car is for SALE';
         }
     }
 
     $user1 = new User('Honda', 'Sport');
 
-    echo $user1->name . " " . "is" . " " . "a" . " " . $user1->type . " " . "vehicle" . ".";
-    
+    echo $user1->name . " " . "is" . " " . "a" . " " . $user1->type . " " . "vehicle" . "." . "<br /><br />";
+    echo $user1->greet();
 ?>
