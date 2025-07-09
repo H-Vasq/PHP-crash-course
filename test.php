@@ -1,12 +1,10 @@
 <?php
 
-    function add($num1, $num2) {
-        return $num1 + $num2;
-    }
-
-    $total = add(10, 15);
-
-    echo $total;
+    echo $_GET['name'];
+    echo " is " . $_GET['age'];
+    echo ' years old ';
+    echo 'and has ' . $_GET['cats'];
+    echo " cats";
 
 ?>
     
