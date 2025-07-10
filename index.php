@@ -22,3 +22,6 @@
     echo $user1->name . " " . "is" . " " . "a" . " " . $user1->type . " " . "vehicle" . "." . "<br /><br />";
     echo $user1->greet();
 ?>
+
+// start 
+
