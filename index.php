@@ -11,7 +11,7 @@
        }
 
        public function greet(){
-        return $this->name . ' Hi, how are you?';
+        return $this->name . "!" . ' Hi, how are you?';
        }
     }
 
@@ -19,7 +19,7 @@
 
    
     echo $user1->name . ' is ' . $user1->age . ' years old';
-    
-
+    echo '<br><br>';
+    echo $user1->greet();
 ?>
 
