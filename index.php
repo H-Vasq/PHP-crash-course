@@ -14,6 +14,10 @@
 
     echo '<br>';
     echo $user2->greet();
+    echo '<br>';
+    echo '<br>';
+    echo $user1->greet();
+
     
 
 ?>
