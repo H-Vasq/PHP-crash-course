@@ -13,6 +13,10 @@
        public function greet(){
         return $this->name . "!" . ' Hi, how are you?';
        }
+
+       public function __destruct() {
+        echo 'destructor ran...';
+       }
     }
 
     $user1 = new User('Dougie', 54);
