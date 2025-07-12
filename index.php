@@ -1,23 +1,24 @@
 <?php    
 
     class User {
-        public $name = 'Gord';
-        public function greet() {
-            return $this->name . ' says Hello !';
-        }
+       public $name;
+       public $age;
+
+       public function __construct($name, $age) {
+        // 
+        $this->name = $name;
+        $this->age = $age;
+       }
+
+       public function greet(){
+        return $this->name . ' Hi, how are you?';
+       }
     }
 
-    $user1 = new User();
+    $user1 = new User('Dougie', 54);
 
-    $user2 = new User();
-    $user2->name = 'Susan';
-
-    echo '<br>';
-    echo $user2->greet();
-    echo '<br>';
-    echo '<br>';
-    echo $user1->greet();
-
+   
+    echo $user1->name . ' is ' . $user1->age . ' years old';
     
 
 ?>
