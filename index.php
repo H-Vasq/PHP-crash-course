@@ -4,8 +4,10 @@
        public $name;
        public $age;
 
-       public function __construct() {
-        echo 'constructor ran...';
+       public function __construct($name, $age) {
+        // 
+        $this->name = $name;
+        $this->age = $age;
        }
 
        public function greet(){
@@ -13,11 +15,10 @@
        }
     }
 
-    $user1 = new User();
+    $user1 = new User('Dougie', 54);
 
-    $user2 = new User();
    
-
+    echo $user1->name . ' is ' . $user1->age . ' years old';
     
 
 ?>
