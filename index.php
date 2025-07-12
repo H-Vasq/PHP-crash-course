@@ -9,11 +9,11 @@
 
     $user1 = new User();
 
-    // echo $user1->name;
+    $user2 = new User();
+    $user2->name = 'Susan';
 
-    echo $user1->greet()
-
-    
+    echo '<br>';
+    echo $user2->greet();
     
 
 ?>
