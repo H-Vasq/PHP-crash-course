@@ -1,34 +1,24 @@
 <?php    
 
-    function my_function() {
-        echo "Hello!";
+    $double = function($x) {
+        return $x * 2;
     };
 
-    $my_function = function($name) {
-        echo "Hello! $name!\n";
+    $subtract_one = function($x) {
+        return $x - 1;
     };
 
-    $my_function("Roberta");
-
-    $fetch_data_real = function() {
-        echo "Fetching data...\n";
+    $add_three = function($x) {
+        return $x + 3;
     };
 
-    // $environment = 'dev';
-    $environment = 'prod';
+    $my_number = 42;
 
-    $fetch_data_fake = function() {
-        return [
-            'name' => 'Jane',
-            'job' => 30,
-        ];
-    };
+    $doubled = $double($my_number);
 
-    $fetch_data = ($environment === 'dev'
-    ? $fetch_data_fake
-    : $fetch_data_real);
+    $doubled_minus_one = $subtract_one($doubled);
 
-    // print_r($fetch_data());
-    $fetch_data();
+    $plus_three = $add_three($doubled_minus_one);
+
 ?>
 
