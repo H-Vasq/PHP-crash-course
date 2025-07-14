@@ -25,6 +25,6 @@
 
     $divide_safe = $second_arg_isnt_zero($divide);
 
-    echo $divide_safe(10, 2) . "<br>";
+    echo $divide_safe(10, 4) . "<br>";
 
 ?>
