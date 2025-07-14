@@ -23,6 +23,13 @@
             return $this->$property;
         }
        }
+
+       public function __set($property, $value){
+        if(property_exists($this, $property)) {
+            $this->$property = $value;
+       }
+       return $this;
+    }
     }
 
     $user1 = new User('Joanna', 25);
@@ -30,8 +37,8 @@
     // echo $user1->setName('Roxanne');
     // echo $user1->getName();
 
-
-    echo $user1->__get('name');
+    $user1->__set('age', 35);
+    echo $user1->__get('age');
 
 ?>
 
