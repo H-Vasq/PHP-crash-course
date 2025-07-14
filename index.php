@@ -1,44 +1,34 @@
 <?php    
 
-    class User {
-       public $name;
-       public $age;
+    function my_function() {
+        echo "Hello!";
+    };
 
-       public function __construct($name, $age) {
-        // 
-        $this->name = $name;
-        $this->age = $age;
-       }
+    $my_function = function($name) {
+        echo "Hello! $name!\n";
+    };
 
-       public function getName(){
-        return $this->name;
-       }
+    $my_function("Roberta");
 
-       public function setName($name) {
-        $this->name = $name;
-       }
+    $fetch_data_real = function() {
+        echo "Fetching data...\n";
+    };
 
-       public function __get($property) {
-        if(property_exists($this, $property)) {
-            return $this->$property;
-        }
-       }
+    // $environment = 'dev';
+    $environment = 'prod';
 
-       public function __set($property, $value){
-        if(property_exists($this, $property)) {
-            $this->$property = $value;
-       }
-       return $this;
-    }
-    }
+    $fetch_data_fake = function() {
+        return [
+            'name' => 'Jane',
+            'job' => 30,
+        ];
+    };
 
-    $user1 = new User('Joanna', 25);
+    $fetch_data = ($environment === 'dev'
+    ? $fetch_data_fake
+    : $fetch_data_real);
 
-    // echo $user1->setName('Roxanne');
-    // echo $user1->getName();
-
-    $user1->__set('age', 35);
-    echo $user1->__get('age');
-
+    // print_r($fetch_data());
+    $fetch_data();
 ?>
 
