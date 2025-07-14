@@ -1,15 +1,30 @@
 <?php    
 
-    $create_printer = function() {
-        $my_favorite_number = 50;
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 
-        return function() use ($my_favorite_number) {
-            echo "My fav number is $my_favorite_number\n";
+    $divide = function($x, $y) {
+        if ($y == 0) {
+            echo "Cannot divide by zero!\n";
+            return null;
+        }
+        return $x / $y;
+    };
+
+    $second_arg_isnt_zero = function($func) {
+        return function(...$args) use ($func) {
+            if ($args[1] == 0) {
+                echo "Cannot divide by zero!\n";
+                return null;
+            }
+
+            return $func(...$args);
         };
     };
 
-        $my_printer = $create_printer();
-        $my_printer();
+    $divide_safe = $second_arg_isnt_zero($divide);
 
+    echo $divide_safe(10, 2) . "<br>";
 
 ?>
