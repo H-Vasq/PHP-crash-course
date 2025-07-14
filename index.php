@@ -14,11 +14,17 @@
 
     $my_number = 42;
 
-    $doubled = $double($my_number);
+    $function_array = [
+        $double,
+        $subtract_one,
+        $add_three,
+    ];
 
-    $doubled_minus_one = $subtract_one($doubled);
+    // $doubled = $double($my_number);
 
-    $plus_three = $add_three($doubled_minus_one);
+    // $doubled_minus_one = $subtract_one($doubled);
+
+    // $plus_three = $add_three($doubled_minus_one);
 
 ?>
 
