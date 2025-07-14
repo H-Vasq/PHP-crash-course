@@ -10,20 +10,35 @@
         $this->age = $age;
        }
 
-       public function greet(){
-        return $this->name . "!" . ' Hi, how are you?';
+       public function getName(){
+        return $this->name;
        }
 
-       public function __destruct() {
-        echo 'destructor ran...';
+       public function setName($name) {
+        $this->name = $name;
        }
+
+       public function __get($property) {
+        if(property_exists($this, $property)) {
+            return $this->$property;
+        }
+       }
+
+       public function __set($property, $value){
+        if(property_exists($this, $property)) {
+            $this->$property = $value;
+       }
+       return $this;
+    }
     }
 
-    $user1 = new User('Dougie', 54);
+    $user1 = new User('Joanna', 25);
 
-   
-    echo $user1->name . ' is ' . $user1->age . ' years old';
-    echo '<br><br>';
-    echo $user1->greet();
+    // echo $user1->setName('Roxanne');
+    // echo $user1->getName();
+
+    $user1->__set('age', 35);
+    echo $user1->__get('age');
+
 ?>
 
