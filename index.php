@@ -12,13 +12,20 @@
         return $x + 3;
     };
 
-    $my_number = 42;
+    $my_number = 60;
 
     $function_array = [
         $double,
         $subtract_one,
         $add_three,
     ];
+
+    for ($i = 0; $i < count($function_array); $i += 1) {
+        $my_number = $function_array[$i]($my_number);
+
+    echo $my_number . "\n";
+
+    }
 
     // $doubled = $double($my_number);
 
