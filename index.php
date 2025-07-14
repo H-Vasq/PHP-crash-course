@@ -1,37 +1,19 @@
 <?php    
 
-    $double = function($x) {
-        return $x * 2;
+    $add = function($x, $y) {
+        return $x + $y;
     };
 
-    $subtract_one = function($x) {
-        return $x - 1;
+    $subtract = function($x, $y) {
+        return $x - $y;
     };
 
-    $add_three = function($x) {
-        return $x + 3;
+    $combine_2_and_3 = function($func) {
+        return $func(2, 3);
     };
 
-    $my_number = 60;
-
-    $function_array = [
-        $double,
-        $subtract_one,
-        $add_three,
-    ];
-
-    for ($i = 0; $i < count($function_array); $i += 1) {
-        $my_number = $function_array[$i]($my_number);
-
-    echo $my_number . "\n";
-
-    }
-
-    // $doubled = $double($my_number);
-
-    // $doubled_minus_one = $subtract_one($doubled);
-
-    // $plus_three = $add_three($doubled_minus_one);
+    echo $combine_2_and_3($add) . "\n<br><br>";
+    echo $combine_2_and_3($subtract) . "\n";
 
 ?>
 
