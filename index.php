@@ -1,19 +1,35 @@
 <?php    
-
-    $add = function($x, $y) {
-        return $x + $y;
+    $create_printer = function() {
+        return function() {
+            echo "Hello functional!<br><br>";
+        };
     };
 
-    $subtract = function($x, $y) {
-        return $x - $y;
+    $my_printer = $create_printer();
+    $my_printer();
+
+    // $double = function($x) {
+    //     return $x * 2;
+    // };
+
+    // $triple = function($x) {
+    //     return $x * 3;
+    // };
+
+    // $quadruple = function($x) {
+    //     return $x * 4;
+    // };
+
+    $create_multiplier = function($y) {
+        return function($x) use ($y) {
+            return $x * $y;
+        };
     };
 
-    $combine_2_and_3 = function($func) {
-        return $func(2, 3);
-    };
-
-    echo $combine_2_and_3($add) . "\n<br><br>";
-    echo $combine_2_and_3($subtract) . "\n";
-
+    $double = $create_multiplier(2);
+    $triple = $create_multiplier(3);
+    $quadruple = $create_multiplier(4);
+    
+    echo $triple(13);
 ?>
 
