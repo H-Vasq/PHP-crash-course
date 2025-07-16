@@ -15,5 +15,13 @@
         $career_data,
     );
 
-    print_r($person_with_career_data);
+    $add = function(...$args) {
+        $sum = 0;
+        for ($i = 0; $i < count($args); $i += 1) {
+            $sum += $args[$i];
+        }
+        return $sum;
+    };
+
+    echo $add(1,2,3,4,5) . "\n";
 ?>
