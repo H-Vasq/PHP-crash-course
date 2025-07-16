@@ -1,38 +1,14 @@
 <?php
 
-    $employees = [
-        [
-            'name' => 'Bill',
-            'years_of_service' => 55,
-        ], [
+    $numbers = [2,3,4,5,6,7,8,9,10];
 
-            'name' => 'Carol',
-            'years_of_service' => 34,
-        ], [
-            'name' => 'Clark',
-            'years_of_service' => 40,
-        ], [
-            'name' => 'Hannah',
-            'years_of_service' => 24,
-        ]
-    ];
-
-    function array_usort($array, $comparator_func) {
-        usort($array, $comparator_func);
-        return $array;
+    $get_sum = function($carry, $item) {
+        echo '$carry: ' . $carry . ', $item: ' . $item . "\n";
+        return $carry + $item;
     };
 
-    $years_of_service_comparator = function($a, $b) {
-        if ($a['years_of_service'] < $b['years_of_service']) {
-            return -1;
-        } else if ($a['years_of_service'] > $b['years_of_service']) {
-            return 1;
-        } else {
-            return 0;
-        }
-    };
+    $sum = array_reduce($numbers, $get_sum, 0);
 
-    $sorted_employees = array_usort($employees, $years_of_service_comparator);
+    echo "$sum\n";
 
-    print_r($sorted_employees);
 ?>
