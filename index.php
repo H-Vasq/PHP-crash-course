@@ -1,12 +1,13 @@
-<?php    
-    $letters = ['a', 'b', 'c', 'd', 'e'];
-    $numbers = [1,2,3,4,5];
+<?php   
+    $numbers = [20,5,6,9,3,11];
 
-    $pairs = array_map(
-        fn($letter, $number) => "$letter$number",
-        $letters,
-        $numbers,
-    );
+    function array_sort($array, ...$rest) {
+        sort($array, ...$rest);
+        return $array;
+    };
 
-    print_r($pairs);
+    $numbers_sorted = array_sort($numbers);
+
+    print_r($numbers);
+    print_r($numbers_sorted);
 ?>
