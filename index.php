@@ -2,14 +2,12 @@
 
     $numbers = [0,1,2,3,4,5,6,7,8,9];
 
-    $doubled_numbers = [];
-
-    $double = function($x) {
-        return $x * 2;
+    $is_even = function($x) {
+        return $x % 2 == 0;
     };
 
-    $doubled_numbers = array_map($double, $numbers);
+    $even_numbers = array_filter($numbers, $is_even);
 
-    print_r($doubled_numbers);
+    print_r($even_numbers);
 
 ?>
