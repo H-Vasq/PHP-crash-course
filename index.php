@@ -4,6 +4,12 @@
 
     $doubled_numbers = [];
 
-    
+    $double = function($x) {
+        return $x * 2;
+    };
+
+    $doubled_numbers = array_map($double, $numbers);
+
+    print_r($doubled_numbers);
 
 ?>
