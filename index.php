@@ -1,25 +1,19 @@
 <?php    
 
-    $names_1 = [
-        'john',
-        'betty',
-        'thomas',
+    $person_data = [
+        'name' => 'Bryce',
+        'age'=> 34,
     ];
 
-    $names_2 = [
-        'Peter',
-        'Diana',
-        'Carl',
+    $career_data = [
+        'job' => 'developer',
+        'salary' => 245,
     ];
 
-    $all_names = [
-        'Rima',
-        ...$names_1,
-        'Cole',
-        ...$names_2,
-        'Mario',
-    ];
+    $person_with_career_data = array_merge(
+        $person_data,
+        $career_data,
+    );
 
-    print_r($all_names);
-
+    print_r($person_with_career_data);
 ?>
