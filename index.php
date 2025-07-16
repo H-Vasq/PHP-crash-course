@@ -1,13 +1,12 @@
 <?php    
+    $letters = ['a', 'b', 'c', 'd', 'e'];
+    $numbers = [1,2,3,4,5];
 
-    $numbers = [0,1,2,3,4,5,6,7,8,9];
+    $pairs = array_map(
+        fn($letter, $number) => "$letter$number",
+        $letters,
+        $numbers,
+    );
 
-    $is_even = function($x) {
-        return $x % 2 == 0;
-    };
-
-    $even_numbers = array_filter($numbers, $is_even);
-
-    print_r($even_numbers);
-
+    print_r($pairs);
 ?>
