@@ -1,9 +1,9 @@
 <?php    
     $letters = ['a', 'b', 'c', 'd', 'e'];
-    $numbers = [0,1,2,3,4,5,6,7,8,9];
+    $numbers = [1,2,3,4,5];
 
     $pairs = array_map(
-        fn($letter, $numbers) => "$letter$number",
+        fn($letter, $number) => "$letter$number",
         $letters,
         $numbers,
     );
