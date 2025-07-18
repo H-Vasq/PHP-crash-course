@@ -34,5 +34,8 @@
         fn($carry, $item) => $carry + $item,
     );
 
-    print_r($total_developer_salaries);
+    $average_developer_salary = $total_developer_salaries / count($developer_salaries);
+
+    echo "Average dev salary is $average_developer_salary <br><br>";
+
 ?>
