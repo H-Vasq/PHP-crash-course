@@ -1,14 +1,20 @@
 <?php
-
-    $numbers = [2,3,4,5,6,7,8,9,10];
-
-    $get_sum = function($carry, $item) {
-        echo '$carry: ' . $carry . ', $item: ' . $item . "\n";
-        return $carry + $item;
-    };
-
-    $sum = array_reduce($numbers, $get_sum, 0);
-
-    echo "$sum\n";
-
+    $employees = [
+    [
+        'name' => "John",
+        'age' => 43,
+        'salary' => 90000,
+        'job_title' => 'developer',
+    ], [
+        'name' => "Barnie",
+        'age' => 30,
+        'salary' => 50000,
+        'job_title' => 'admin',
+    ], [
+        'name' => "Korina",
+        'age' => 20,
+        'salary' => 4000,
+        'job_title' => 'junior',
+    ]
+];
 ?>
