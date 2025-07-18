@@ -29,5 +29,10 @@
 
     $developer_salaries = array_map(fn($x) => $x['salary'], $developers );
 
-    print_r($developer_salaries);
+    $total_developer_salaries = array_reduce(
+        $developer_salaries,
+        fn($carry, $item) => $carry + $item,
+    );
+
+    print_r($total_developer_salaries);
 ?>
