@@ -1,15 +1,16 @@
 <?php
 
-    function count_down($x) {
-        if ($x < 0) {
-            echo "Blastoff !";
+    function count_up($x, $max) {
+        if ($x > $max) {
+            echo "Done! <br>";
             return;
         }
-        echo $x . "...<br>";
-        count_down($x - 1);
-    }
 
-    count_down(10);
+        echo $x . "...<br>";
+        count_up($x + 1, $max);
+    };
+
+    count_up(0, 10)
 
 
 ?>
