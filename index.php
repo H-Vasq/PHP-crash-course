@@ -1,11 +1,15 @@
 <?php
 
-    $add = fn($x, $y, $z) => $x + $y + $z;
+    function count_down($x) {
+        if ($x < 0) {
+            echo "Blastoff !";
+            return;
+        }
+        echo $x . "...<br>";
+        count_down($x - 1);
+    }
 
-    $add_partial = fn($x) => fn($y, $z) => $add($x, $y, $z);
+    count_down(10);
 
-    $add_5 = $add_partial(5);
-    $sum = $add_5(6, 7);
 
-    echo $sum . "<br><br>";
 ?>
