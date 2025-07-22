@@ -1,11 +1,16 @@
 <?php
 
-    $add = fn($x, $y, $z) => $x + $y + $z;
+    function count_up($x, $max) {
+        if ($x > $max) {
+            echo "Done! <br>";
+            return;
+        }
 
-    $add_partial = fn($x) => fn($y, $z) => $add($x, $y, $z);
+        echo $x . "...<br>";
+        count_up($x + 1, $max);
+    };
 
-    $add_5 = $add_partial(5);
-    $sum = $add_5(6, 7);
+    count_up(0, 10)
 
-    echo $sum . "<br><br>";
+
 ?>
