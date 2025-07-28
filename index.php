@@ -1,13 +1,14 @@
 <?php
 
-$colors = array('Red', 'Green', 'Blue', 'Yellow');
+$home_towns = array(
+    'joe' => 'new york',
+    'luos' => 'mescioco',
+    'dan' => 'cebu',
+    'marianne' => 'manila',
+);
 
-// print_r($colors);
+// print_r( $home_towns )
 
-// 
-
-$colors[] = 'Purple';
-
- print_r($colors);
+echo $home_towns['luos'];
 
 ?>
