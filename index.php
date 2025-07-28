@@ -2,9 +2,9 @@
 
 // $name = isset($name) ? $name: "Kyle";
 
-// echo $name . "<br>";
+echo $name . "<br>";
 
-$name = $name ?: "Mario";
+$name = $name ?? "Mario";
 
 echo $name;
 
