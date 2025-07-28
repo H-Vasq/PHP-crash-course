@@ -9,7 +9,7 @@ if ( $is_logged_in ) {
 
 echo "$message <br>";
 
-$message = $is_logged_in ? "Welcome back!" : "Welcome.";
+$message = !$is_logged_in ? "Welcome back!" : "Welcome.";
 
 echo "$message <br>";
 
