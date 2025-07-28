@@ -1,14 +1,11 @@
 <?php
 
-$home_towns = array(
-    'joe' => 'new york',
-    'luos' => 'mescioco',
-    'dan' => 'cebu',
-    'marianne' => 'manila',
-);
+// $name = isset($name) ? $name: "Kyle";
 
-// print_r( $home_towns )
+echo $name . "<br>";
 
-echo $home_towns['luos'];
+$name = $name ?? "Mario";
+
+echo $name;
 
 ?>
