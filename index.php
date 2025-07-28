@@ -1,18 +1,11 @@
 <?php
-$is_logged_in = true;
 
-if ( $is_logged_in ) {
-    $message = "Welcome Back!";
-} else {
-    $message = "Welcome.";
-}
+// $name = isset($name) ? $name: "Kyle";
 
-echo "$message <br>";
+// echo $name . "<br>";
 
-$message = !$is_logged_in ? "Welcome back!" : "Welcome.";
+$name = $name ?: "Mario";
 
-echo "$message <br>";
-
-
+echo $name;
 
 ?>
