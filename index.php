@@ -1,14 +1,18 @@
 <?php
+$is_logged_in = true;
 
-$home_towns = array(
-    'joe' => 'new york',
-    'luos' => 'mescioco',
-    'dan' => 'cebu',
-    'marianne' => 'manila',
-);
+if ( $is_logged_in ) {
+    $message = "Welcome Back!";
+} else {
+    $message = "Welcome.";
+}
 
-// print_r( $home_towns )
+echo "$message <br>";
 
-echo $home_towns['luos'];
+$message = $is_logged_in ? "Welcome back!" : "Welcome.";
+
+echo "$message <br>";
+
+
 
 ?>
