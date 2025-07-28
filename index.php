@@ -1,8 +1,7 @@
 <?php
 
-$age = 40;
+$name = 'Mike';
 
-$double_age = $age * 8;
-echo $double_age;
+echo "Joe's nickname was \"The Knife\".";
 
 ?>
