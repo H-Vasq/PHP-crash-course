@@ -1,9 +1,14 @@
 <?php
 
-$name = 'Mike';
-echo 'Hello, ' . $name . "\n<br>";
+$home_towns = array(
+    'joe' => 'new york',
+    'luos' => 'mescioco',
+    'dan' => 'cebu',
+    'marianne' => 'manila',
+);
 
-echo "Joe's nickname was \"The Knife\".<br>";
-echo "Moe's nickname was \"The Knife\".";
+// print_r( $home_towns )
+
+echo $home_towns['luos'];
 
 ?>
