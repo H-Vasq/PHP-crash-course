@@ -1,9 +1,7 @@
 <?php
 
-$name = 'Mike';
-echo 'Hello, ' . $name . "\n<br>";
+$colors = array('Red', 'Green', 'Blue', 'Yellow');
 
-echo "Joe's nickname was \"The Knife\".<br>";
-echo "Moe's nickname was \"The Knife\".";
+print_r($colors);
 
 ?>
