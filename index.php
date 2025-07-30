@@ -1,11 +1,19 @@
 <?php
 
-// $name = isset($name) ? $name: "Kyle";
+$turtle = 'raph';
+$bandana = '';
 
-echo $name . "<br>";
+switch ($turtle) {
+    case 'leo':
+        $bandana = 'blue';
+    case 'raph':
+        $bandana = 'red';
+    case 'don':
+        $bandana = 'purple';
+    default:
+        $bandana = 'yellow';
+    }
 
-$name = $name ?? "Mario";
-
-echo $name;
+echo "$turtle's bandana is $bandana! <br>";
 
 ?>
