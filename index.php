@@ -1,26 +1,19 @@
 <?php
 
-$turtle = '';
-$bandana = '';
+// $a = 12;
 
-switch ($turtle) {
-    case 'leo':
-        $bandana = 'blue';
-    case 'raph':
-        $bandana = 'red';
-    case 'don':
-        $bandana = 'purple';
-    default:
-        $bandana = 'yellow';
-    }
+// if ( $a % 2 == 0 ) {
+//     echo "$a is even";
+// } else {
+//     echo "$a is odd";
+// };
 
-$bandana = match ($turtle) {
-    'leo' => 'red02',
-    'raph' => 'yellow-green',
-    'don' => 'orange',
-    default => 'gray'
-};
+$a = 5;
+$b = 7;
 
-echo "$bandana <br>"
+echo 'The value of $a is ' . ++$b . "<br>";
+
+echo $a;
+
 
 ?>
