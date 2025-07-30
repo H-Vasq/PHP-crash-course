@@ -1,6 +1,6 @@
 <?php
 
-$turtle = 'raph';
+$turtle = '';
 $bandana = '';
 
 switch ($turtle) {
@@ -14,6 +14,13 @@ switch ($turtle) {
         $bandana = 'yellow';
     }
 
-echo "$turtle's bandana is $bandana! <br>";
+$bandana = match ($turtle) {
+    'leo' => 'red02',
+    'raph' => 'yellow-green',
+    'don' => 'orange',
+    default => 'gray'
+};
+
+echo "$bandana <br>"
 
 ?>
