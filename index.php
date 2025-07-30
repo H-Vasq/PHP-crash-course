@@ -1,7 +1,10 @@
 <?php
 
-$a = 'Okay';
-echo 'the value of $a is ' . ++$a;
+$i = 0;
 
+while ($i <= 10) {
+    echo "$i <br>";
+    $i++;
+}
 
 ?>
