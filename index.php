@@ -1,19 +1,10 @@
 <?php
 
-// $a = 12;
+$i = 0;
 
-// if ( $a % 2 == 0 ) {
-//     echo "$a is even";
-// } else {
-//     echo "$a is odd";
-// };
-
-$a = 5;
-$b = 7;
-
-echo 'The value of $a is ' . ++$b . "<br>";
-
-echo $a;
-
+while ($i <= 10) {
+    echo "$i <br>";
+    $i++;
+}
 
 ?>
