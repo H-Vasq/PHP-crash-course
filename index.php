@@ -1,26 +1,13 @@
 <?php
 
-$turtle = '';
-$bandana = '';
+$a = 12;
 
-switch ($turtle) {
-    case 'leo':
-        $bandana = 'blue';
-    case 'raph':
-        $bandana = 'red';
-    case 'don':
-        $bandana = 'purple';
-    default:
-        $bandana = 'yellow';
-    }
-
-$bandana = match ($turtle) {
-    'leo' => 'red02',
-    'raph' => 'yellow-green',
-    'don' => 'orange',
-    default => 'gray'
+if ( $a % 2 == 0 ) {
+    echo "$a is even";
+} else {
+    echo "$a is odd";
 };
 
-echo "$bandana <br>"
+
 
 ?>
