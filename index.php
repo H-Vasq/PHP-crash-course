@@ -11,7 +11,7 @@
 $a = 5;
 $b = 7;
 
-echo 'The value of $a is ' . $a++ . "<br>";
+echo 'The value of $a is ' . ++$b . "<br>";
 
 echo $a;
 
