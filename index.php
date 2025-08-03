@@ -1,33 +1,11 @@
 <?php
 
-// function add_two($a) {
-//     return $a + 2;
-// }
+$names = ['Joe', 'Erin', 'Teresa', 'Louis', 'Abigail'];
 
-// $a = 2;
-// echo add_two($a);
+usort( $names, function($a, $b) {
+    return $a[1] <=> $b[1];
+});
 
-
-// function double(&$b)
-
-// {
-//     $b *= 2;
-// }
-
-// $b = 9;
-// double($b);
-
-// echo "<br> $b <br>";
-
-function triple() {
-    global $c;
-    $c *= 3;
-}
-
-$c = 10;
-triple();
-
-echo "<br> $c <br>";
-
+print_r($names);
 
 ?>
