@@ -1,24 +1,33 @@
 <?php
 
-$colors = ['red', 'green', 'blue', 'yellow'];
+// function add_two($a) {
+//     return $a + 2;
+// }
 
-for ($i = 0; $i < sizeof($colors); $i++) {
-    echo $colors[$i] . "<br>";
+// $a = 2;
+// echo add_two($a);
+
+
+// function double(&$b)
+
+// {
+//     $b *= 2;
+// }
+
+// $b = 9;
+// double($b);
+
+// echo "<br> $b <br>";
+
+function triple() {
+    global $c;
+    $c *= 3;
 }
 
-foreach( $colors as $color ) {
-    echo "$color <br>";
-}
+$c = 10;
+triple();
 
-$home_towns = [
-    'Joe' => 'Echo, NY',
-    'Erma' => 'Charlie, AZ',
-    'Oscar' => 'Lima, PA',
-    'Ynez' => 'Delta, OR',
-];
+echo "<br> $c <br>";
 
-foreach( $home_towns as $name => $town) {
-    echo "$name lives in $town <br>";
-}
 
 ?>
