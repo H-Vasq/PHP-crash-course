@@ -29,6 +29,13 @@ class Person {
     }
 }
 
+$Minerva = new Person( 'Minerva', 35);
+$Alice = new Person( 'Ginny', 45);
 
+echo $Minerva->get_first_name(). "<br>";
+
+$Alice->set_birthday(true);
+
+echo "Alice is " . $Alice->get_age() . ".<br>";
 
 ?>
