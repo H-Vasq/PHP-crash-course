@@ -1,11 +1,17 @@
 <?php
 
-$names = ['Joe', 'Erin', 'Teresa', 'Louis', 'Abigail'];
+class Person {
+    var $first_name;
+    var $age;
+    var $birthday = false;
 
-usort( $names, function($a, $b) {
-    return $a[1] <=> $b[1];
-});
+    function __construct( $first_name, $age )
+    {
+        $this->first_name = $first_name;
+        $this->age = $age;
+    }
 
-print_r($names);
+    
+}
 
 ?>
