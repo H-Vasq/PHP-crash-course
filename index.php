@@ -1,9 +1,9 @@
 <?php
 
-$message = "HELLO THERE";
+function add_two($a) {
+    return $a + 2;
+}
 
-$newmsg = strtolower($message);
-
-echo $newmsg;
-
+$a = 2;
+echo add_two($a);
 ?>
